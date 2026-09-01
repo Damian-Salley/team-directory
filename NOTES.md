@@ -42,3 +42,14 @@ team member sorting"
 
 F: Changed line 47 of notes.md -> Bad because line 47 could change in the future and the message doesn't explain what was 
 actually changed. A better message would be "Clarify public members"
+
+
+
+=============================================================================================================================
+
+
+
+<<< Part 3 >>>
+Task 4: The feature/add-search branch was merged into main using a fast-forward merge. I could tell because Git moved 
+main directly to the latest feature commit without creating a separate merge commit. (This one I didn't know, I had AI
+tell me this but don't understand it still)
