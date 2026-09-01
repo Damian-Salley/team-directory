@@ -8,7 +8,14 @@ namespace TeamDirectory
         {
             Console.WriteLine("Team Directory");
 
-            string[] teamMembers = File.ReadAllLines("team.txt");
+            List<string> teamMembers = new List<string>();
+
+            string[] names = File.ReadAllLines("team.txt");
+
+            foreach (string name in names)
+            {
+                teamMembers.Add(name);
+            }
 
             foreach (string member in teamMembers)
             {
@@ -17,7 +24,15 @@ namespace TeamDirectory
 
             Console.WriteLine();
             Console.Write("Enter a name to search: ");
-            string? searchTerm = Console.ReadLine();
+            string? searchName = Console.ReadLine();
+
+            foreach (string member in teamMembers)
+            {
+                if (member == searchName)
+                {
+                    Console.WriteLine("Found: " + member);
+                }
+            }
         }
     }
 }
