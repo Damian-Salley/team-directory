@@ -53,3 +53,8 @@ actually changed. A better message would be "Clarify public members"
 Task 4: The feature/add-search branch was merged into main using a fast-forward merge. I could tell because Git moved 
 main directly to the latest feature commit without creating a separate merge commit. (This one I didn't know, I had AI
 tell me this but don't understand it still)
+
+Task 9: I rebased feature/add-count onto the latest main, which replayed the feature commit on top of the updated main branch and gave it a new commit hash. I then merged the branch using a fast-forward merge. Unlike the earlier conflict merge, this produced a straight, linear history instead of another branch diamond.
+
+<<< Part 4 >>>
+Testing rejected push recovery.
