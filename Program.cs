@@ -10,6 +10,7 @@ namespace TeamDirectory
 
             List<string> teamMembers = new List<string>();
 
+            //retrieve names from team.txt file and add them to the list
             string[] names = File.ReadAllLines("team.txt");
 
             foreach (string name in names)
@@ -31,8 +32,9 @@ namespace TeamDirectory
                 if (member == searchName)
                 {
                     Console.WriteLine("Found: " + member);
-                }
+                }              
             }
+             Console.WriteLine("Total team members: " + teamMembers.Count);
         }
     }
 }
