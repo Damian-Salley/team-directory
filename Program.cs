@@ -14,6 +14,10 @@ namespace TeamDirectory
             {
                 Console.WriteLine(member);
             }
+
+            Console.WriteLine();
+            Console.Write("Enter a name to search: ");
+            string? searchTerm = Console.ReadLine();
         }
     }
 }
