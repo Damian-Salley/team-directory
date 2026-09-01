@@ -1,1 +1,1 @@
-Team Directory Application
+Team Directory Search Application
